@@ -9,20 +9,20 @@
   </h1>
 
   <ul>
-  <li class="text" *ngFor="let item of items | async">
+  <li class="text" *ngFor="let item of persons | async">
     {{item.$value}}
   </li>
 </ul>
 
-<h1>{{ (item | async)?.name }}  objects</h1> 
+<h1> simple demo for AngularFire</h1> 
 
 
 
-  <input type="text" #newname placeholder="Name" />
-  <input type="text" #newsize placeholder="Size" />
+  <input type="text" #newname placeholder="FirstName" />
+  <input type="text" #newsize placeholder="lastName" />
   <br />
-  <button (click)="save(newname.value)">Add Item</button>
-  <button (click)="update(newsize.value)">Update Size</button>
+  <button (click)="save(newname.value)">Add Name</button>
+  <button (click)="update(newsize.value)">Update lastName</button>
   <button (click)="delete()">Delete</button>
   
 </div>

@@ -24,7 +24,7 @@ export class AppComponent {
 
   save(newName: string) {
     
-    const addItem = this.itemsObject.set({ name: newName });
+     this.itemsObject.set({ name: newName });
     
 
   }
